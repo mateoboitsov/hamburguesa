@@ -1,16 +1,78 @@
-# React + Vite
+# la burger
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+una hero page animada construida con humano + ia. el resultado de lo que pasa cuando alguien diseña bien y le pide a la ia que lo ejecute.
 
-Currently, two official plugins are available:
+→ [ver en vivo](#) <!-- añade tu url de deploy aquí -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## qué hay aquí
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- hamburguesa que se desencaja al hacer scroll, capa a capa
+- texto con efecto flicker + scramble (las letras se revuelven antes de aparecer)
+- títulos que emergen de abajo con máscara
+- etiquetas de ingredientes que aparecen y desaparecen según el scroll
+- marquee continuo en la siguiente sección
+- menú animado que desliza desde la derecha
+- adaptado a móvil
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## cómo usarlo
+
+```bash
+git clone https://github.com/mateoboitsov/hamburguesa.git
+cd hamburguesa
+pnpm install
+pnpm dev
+```
+
+si no tienes pnpm:
+
+```bash
+npm install -g pnpm
+```
+
+---
+
+## stack
+
+| herramienta | para qué |
+|-------------|----------|
+| React + Vite | base del proyecto |
+| GSAP + SplitText | todas las animaciones de texto |
+| ScrollTrigger | animaciones vinculadas al scroll |
+| Lenis | smooth scroll |
+
+---
+
+## cómo se construyó
+
+1. imagen de la hamburguesa generada con ChatGPT
+2. cada ingrediente recortado en Figma en frames de la misma anchura
+3. diseño de la hero en Figma con referencias visuales buscadas antes
+4. exportado a React con Builder.io
+5. a partir de ahí, todo con IA: animaciones, scroll, menú, responsive
+
+el truco de la hamburguesa: todos los frames tienen la misma anchura y la altura se ajusta para que el `margin-bottom` negativo sea igual en todos — así la imagen encogida se ve perfecta.
+
+---
+
+## estructura
+
+```
+src/
+├── components/
+│   ├── AnimatedText.jsx   # line reveal reutilizable
+│   ├── Menu.jsx           # menú con animación de entrada
+│   └── Menu.css
+├── pages/
+│   ├── HeroPage.jsx       # toda la lógica de animaciones
+│   └── HeroPage.css
+└── main.jsx               # lenis + gsap ticker
+```
+
+---
+
+*esto es el 5% de lo que ocurre cuando un humano y una ia deciden hacer algo bonito juntos.*
+*los humanos de [maibo](https://maibo.es) + ia · 2026*
