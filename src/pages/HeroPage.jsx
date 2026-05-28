@@ -54,12 +54,12 @@ function flickerOnlyIn(element, delay = 0) {
 }
 
 const BURGER_LAYERS = [
-  { src: '/Pan brioche Top.png',    side: 'right', num: '01', label: 'un pan que se hornea cada manana aqui mismo. mantequilla, un poco de miel, la corteza justa. el tipo de pan que cuando lo ves sabes que algo bueno esta a punto de pasar.' },
-  { src: '/Pepinillios.png',        side: 'left',  num: '02', label: 'encurtidos en casa, 48 horas. la gente los quita. estan equivocados.' },
-  { src: '/Bacon.png',              side: 'right', num: '03', label: 'ahumado en frio 12 horas. no es un ingrediente, es un argumento.' },
-  { src: '/Carne Top.png',          side: 'left',  num: '04', label: 'vacuno gallego, madurada 30 dias, molida el mismo dia. sin rellenos, sin trucos, sin aditivos. solo carne que sabe a carne de verdad porque eso es exactamente lo que es.' },
-  { src: '/Carne Bottom.png',       side: 'right', num: '05', label: 'si, son dos. la primera hamburguesa te da lo que esperas. la segunda te recuerda por que viniste. juntas forman algo que no tiene nombre oficial pero todo el mundo entiende.' },
-  { src: '/Pan brioche Bottom.png', side: 'left',  num: '06', label: 'el suelo de todo esto. se empapa del jugo de la carne, del aceite del bacon, de todo lo que cae desde arriba. no se queja. no se deshace. aguanta. el heroe mas silencioso de esta historia.' },
+  { src: '/Pan brioche Top.png',    side: 'right', num: '01', label: 'un pan que se hornea cada mañana aquí mismo. mantequilla, un poco de miel, la corteza justa. el tipo de pan que cuando lo ves sabes que algo bueno está a punto de pasar.' },
+  { src: '/Pepinillios.png',        side: 'left',  num: '02', label: 'encurtidos en casa, 48 horas. la gente los quita. están equivocados.' },
+  { src: '/Bacon.png',              side: 'right', num: '03', label: 'ahumado en frío 12 horas. no es un ingrediente, es un argumento.' },
+  { src: '/Carne Top.png',          side: 'left',  num: '04', label: 'vacuno gallego, madurada 30 días, molida el mismo día. sin rellenos, sin trucos, sin aditivos. solo carne que sabe a carne de verdad porque eso es exactamente lo que es.' },
+  { src: '/Carne Bottom.png',       side: 'right', num: '05', label: 'sí, son dos. la primera hamburguesa te da lo que esperas. la segunda te recuerda por qué viniste. juntas forman algo que no tiene nombre oficial pero todo el mundo entiende.' },
+  { src: '/Pan brioche Bottom.png', side: 'left',  num: '06', label: 'el suelo de todo esto. se empapa del jugo de la carne, del aceite del bacon, de todo lo que cae desde arriba. no se queja. no se deshace. aguanta. el héroe más silencioso de esta historia.' },
 ]
 
 let labelTimelines = []
@@ -179,7 +179,7 @@ export default function HeroPage() {
         <AnimatedText as="h1" className="title-burguer">LA BURGER</AnimatedText>
 
         <div className="burger-row">
-          <p className="burger-tagline">Comeme<br />entero</p>
+          <p className="burger-tagline">Cómeme<br />entero</p>
           <span className="paren paren-left">(</span>
 
           <div className="burger-stack">
@@ -219,7 +219,7 @@ export default function HeroPage() {
       ))}
     </section>
     <footer className="site-footer">
-      <p className="site-footer-text">esto es el 5% de lo que ocurre cuando un humano y una ia deciden hacer algo bonito juntos. el otro 95% todavia da un poco de miedo.</p>
+      <p className="site-footer-text">esto es el 5% de lo que ocurre cuando un humano y una ia deciden hacer algo bonito juntos. el otro 95% todavía da un poco de miedo.</p>
       <span className="site-footer-tag">los humanos de maibo + ia · 2026</span>
     </footer>
     <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
