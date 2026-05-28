@@ -2,7 +2,7 @@
 
 una hero page animada construida con humano + ia. el resultado de lo que pasa cuando alguien diseña bien y le pide a la ia que lo ejecute.
 
-→ [ver en vivo](#) <!-- añade tu url de deploy aquí -->
+→ [ver en vivo](https://hamburguesa-maibo.netlify.app)
 
 ---
 
@@ -75,4 +75,4 @@ src/
 ---
 
 *esto es el 5% de lo que ocurre cuando un humano y una ia deciden hacer algo bonito juntos.*
-*los humanos de [maibo](https://maibo.es) + ia · 2026*
+*los humanos de [maibo](https://maibo.agency) + ia · 2026*
